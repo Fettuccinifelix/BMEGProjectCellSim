@@ -36,14 +36,14 @@ public class Logic {
         double rngNum =0;
         for(int i =0; i < width*height; i++){
             rngNum = Math.random()*100;
-            if (rngNum < 90.0){
+            if (rngNum < 95.0){
+                cellList.add(new DeadCell(calc.coordFromIndex(i)));
+            }
+            else if (rngNum >= 95.0 && rngNum < 99.0){
                 cellList.add(new TissueCell(calc.coordFromIndex(i)));
-            }
-            else if (rngNum >= 90.0 && rngNum < 99.0){
-                cellList.add(new ImmuneCell(calc.coordFromIndex(i)));
-            } else {
+            } /*else {
                 cellList.add(new CancerCell(calc.coordFromIndex(i)));
-            }
+            }*/
         }
     }
 
@@ -57,7 +57,7 @@ public class Logic {
     }
 
     public int setColour(Pair coords){
-        int toRet = cellList.get(calc.indexFromCoord(coords)).id;
+        int toRet = cellList.get(calc.indexFromCoord(coords)).getId();
         return toRet;
     }
 }
