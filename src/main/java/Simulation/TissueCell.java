@@ -22,15 +22,17 @@ public class TissueCell extends Cell{
     @Override
     public void interactNeighbors(ArrayList<Cell> neighbors){
 
-        for(Cell c : neighbors){
-            //if the ID matches
-            if(c.getId() == 1){
+        //changes, find way to use interact neighbors without having to pass x and y coordinates through
+
+        /*steps:
+        1. Poll neighborhood
+        2. replace cell*/
+
+                int xcoord = this.getXcoords();
+                int ycoord = this.getYcoords();
 
                 ArrayList<Cell> neighborhood = new ArrayList<>();
                 ArrayList<Integer> DeadCellIndices = new ArrayList<>();
-
-                int xcoord = c.getXcoords();
-                int ycoord = c.getYcoords();
 
                 //finds indices of neighboring cells and adds them to an ArrayList
                 ArrayList<Integer> neighbor_indices = CheckNeighbors(xcoord, ycoord);
@@ -59,8 +61,7 @@ public class TissueCell extends Cell{
                     }
                 }
 
-            }
-        }
+
 
 
     }

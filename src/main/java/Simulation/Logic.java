@@ -41,9 +41,9 @@ public class Logic {
             }
             else if (rngNum >= 95.0 && rngNum < 99.0){
                 cellList.add(new TissueCell(calc.coordFromIndex(i)));
-            } /*else {
-                cellList.add(new CancerCell(calc.coordFromIndex(i)));
-            }*/
+            } else {
+                cellList.add(new TissueCell(calc.coordFromIndex(i)));
+            }
         }
     }
 

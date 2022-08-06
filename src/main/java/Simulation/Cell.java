@@ -92,7 +92,7 @@ public abstract class Cell {
         int xcoord1 = xcoord + 1;
         int xcoord_1 = xcoord - 1;
         int ycoord1 = ycoord + 1;
-        int ycoord_1 = xcoord - 1;
+        int ycoord_1 = ycoord - 1;
 
 
                 //uses coordinates of neighbors, checks if coordinates are valid before finding index and adding it to an ArrayList
