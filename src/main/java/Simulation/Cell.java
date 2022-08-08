@@ -97,28 +97,28 @@ public abstract class Cell {
 
                 //uses coordinates of neighbors, checks if coordinates are valid before finding index and adding it to an ArrayList
 
-                if (xcoord_1 < 100 && xcoord_1 >= 0 && ycoord1 < 100 && ycoord1 >= 0) {
+                if ((xcoord_1 < 100 && xcoord_1 >= 0) && (ycoord1 < 100 && ycoord1 >= 0)) {
                     indices.add(indexFromCoord(xcoord_1, ycoord1));
                 }
-                if (xcoord < 100 && xcoord >= 0 && ycoord1 < 100 && ycoord1 >= 0) {
+                if ((xcoord < 100 && xcoord >= 0) && (ycoord1 < 100 && ycoord1 >= 0)) {
                     indices.add(indexFromCoord(xcoord, ycoord1));
                 }
-                if (xcoord1 < 100 && xcoord1 >= 0 && ycoord1 < 100 && ycoord1 >= 0) {
+                if ((xcoord1 < 100 && xcoord1 >= 0) && (ycoord1 < 100 && ycoord1 >= 0)) {
                     indices.add(indexFromCoord(xcoord1, ycoord1));
                 }
-                if (xcoord_1 < 100 && xcoord_1 >= 0 && ycoord < 100 && ycoord >= 0) {
+                if ((xcoord_1 < 100 && xcoord_1 >= 0) && (ycoord < 100 && ycoord >= 0)) {
                     indices.add(indexFromCoord(xcoord_1, ycoord));
                 }
-                if (xcoord1 < 100 && xcoord1 >= 0 && ycoord < 100 && ycoord >= 0) {
+                if ((xcoord1 < 100 && xcoord1 >= 0) && (ycoord < 100 && ycoord >= 0)) {
                     indices.add(indexFromCoord(xcoord1, ycoord));
                 }
-                if (xcoord_1 < 100 && xcoord_1 >= 0 && ycoord_1 < 100 && ycoord_1 >= 0) {
+                if ((xcoord_1 < 100 && xcoord_1 >= 0) && (ycoord_1 < 100 && ycoord_1 >= 0)) {
                     indices.add(indexFromCoord(xcoord_1, ycoord_1));
                 }
-                if (xcoord < 100 && xcoord >= 0 && ycoord_1 < 100 && ycoord_1 >= 0) {
+                if ((xcoord < 100 && xcoord >= 0) && (ycoord_1 < 100 && ycoord_1 >= 0)) {
                     indices.add(indexFromCoord(xcoord, ycoord_1));
                 }
-                if (xcoord1 < 100 && xcoord1 >= 0 && ycoord_1 < 100 && ycoord_1 >= 0) {
+                if ((xcoord1 < 100 && xcoord1 >= 0) && (ycoord_1 < 100 && ycoord_1 >= 0)) {
                     indices.add(indexFromCoord(xcoord1, ycoord_1));
                 }
 
