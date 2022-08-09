@@ -4,6 +4,7 @@ import Util.Pair;
 
 import java.util.ArrayList;
 
+import static Util.Calculator.coordFromIndex;
 import static Util.Calculator.indexFromCoord;
 
 /**
@@ -46,7 +47,7 @@ public class ImmuneCell extends Cell{
             if(CancerCellIndices.size() != 0){
                 double randomCancer = Math.random() * CancerCellIndices.size();
                 int toReplace = CancerCellIndices.get((int) randomCancer);
-                neighbors.get(toReplace).setId(0);
+                neighbors.set(toReplace, new DeadCell(coordFromIndex(toReplace)));
 
             }
 
